@@ -36,7 +36,7 @@ steps:
     publishTestResults: true
 
 
-# - task: PublishCodeCoverageResults@2
-#   displayName: 'Publish Code Coverage Results'
-#   inputs:
-#     summaryFileLocation: '$(Build.SourcesDirectory)/**/MyCoverage/coverage.cobertura.xml'
+- task: PublishCodeCoverageResults@2
+  displayName: 'Publish Code Coverage Results'
+  inputs:
+    summaryFileLocation: '$(Build.SourcesDirectory)/**/MyCoverage/coverage.cobertura.xml'
